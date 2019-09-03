@@ -25,7 +25,7 @@
 
         <activity
             android:screenOrientation="sensorLandscape"
-            android:name="com.indiewalkabout.grimb.YassActivity"
+            android:name="com.indiewalkabout.grimb.GrimbActivity"
             android:hardwareAccelerated="false"
             android:label="@string/title_activity_main" >
             <intent-filter>
@@ -35,7 +35,7 @@
         </activity>
 
         <activity
-            android:name="com.indiewalkabout.grimb.YassTvActivity"
+            android:name="com.indiewalkabout.grimb.GrimbTvActivity"
             android:label="@string/app_name"
             >
 

@@ -14,7 +14,7 @@ public class PauseDialog extends BaseCustomDialog implements View.OnClickListene
     private PauseDialogListener mListener;
     private int mSelectedId;
 
-    public PauseDialog(YassActivity activity) {
+    public PauseDialog(GrimbActivity activity) {
         super(activity);
         setContentView(R.layout.dialog_pause);
         findViewById(R.id.btn_music).setOnClickListener(this);

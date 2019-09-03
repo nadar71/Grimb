@@ -2,7 +2,6 @@ package com.indiewalkabout.grimb.counter;
 
 import android.animation.Animator;
 import android.animation.ValueAnimator;
-import android.content.Intent;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.InputDevice;
@@ -15,10 +14,10 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.indiewalkabout.grimb.ControllerHelpDialog;
+import com.indiewalkabout.grimb.GrimbActivity;
 import com.indiewalkabout.grimb.QuitDialog;
 import com.indiewalkabout.grimb.R;
-import com.indiewalkabout.grimb.YassActivity;
-import com.indiewalkabout.grimb.YassBaseFragment;
+import com.indiewalkabout.grimb.GrimbBaseFragment;
 import com.indiewalkabout.grimb.sound.SoundManager;
 
 import java.util.Random;
@@ -30,19 +29,10 @@ import com.google.android.gms.games.Games;
 import com.google.example.games.basegameutils.GameHelper;
 */
 
-import com.indiewalkabout.grimb.ControllerHelpDialog;
-import com.indiewalkabout.grimb.QuitDialog;
-import com.indiewalkabout.grimb.R;
-import com.indiewalkabout.grimb.YassActivity;
-import com.indiewalkabout.grimb.YassBaseFragment;
-import com.indiewalkabout.grimb.sound.SoundManager;
-
-import java.util.Random;
-
 /**
  * Created by Raul Portales on 03/03/15.
  */
-public class MainMenuFragment extends YassBaseFragment implements View.OnClickListener, QuitDialog.QuitDialogListener {
+public class MainMenuFragment extends GrimbBaseFragment implements View.OnClickListener, QuitDialog.QuitDialogListener {
 
     private static final String PREF_SHOULD_DISPLAY_GAMEPAD_HELP = "com.example.grimb.display.gamepad.help.boolean";
     public static final int TITLE_ANIMATION_DURATION = 1600;
@@ -309,8 +299,8 @@ public class MainMenuFragment extends YassBaseFragment implements View.OnClickLi
         // We could have used this as noon-touchscreen as well
         boolean isLeanback = getYassActivity().getPackageManager().hasSystemFeature("android.software.leanback");
         if (isLeanback) {
-            boolean shownAlready = YassActivity.sGamepadHelpShown;
-            YassActivity.sGamepadHelpShown = true;
+            boolean shownAlready = GrimbActivity.sGamepadHelpShown;
+            GrimbActivity.sGamepadHelpShown = true;
             return !shownAlready;
         }
         if (isGameControllerConnected()) {

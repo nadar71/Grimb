@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.indiewalkabout.grimb.R;
-import com.indiewalkabout.grimb.YassBaseFragment;
+import com.indiewalkabout.grimb.GrimbBaseFragment;
 import com.indiewalkabout.grimb.engine.GameEngine;
 import com.indiewalkabout.grimb.engine.GameObject;
 import com.indiewalkabout.grimb.sound.GameEvent;
@@ -14,11 +14,6 @@ import com.indiewalkabout.grimb.sound.GameEvent;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.games.Games;
  */
-import com.indiewalkabout.grimb.R;
-import com.indiewalkabout.grimb.YassBaseFragment;
-import com.indiewalkabout.grimb.engine.GameEngine;
-import com.indiewalkabout.grimb.engine.GameObject;
-import com.indiewalkabout.grimb.sound.GameEvent;
 
 /**
  * Created by Raul Portales on 03/03/15.
@@ -28,7 +23,7 @@ public class ScoreGameObject extends GameObject {
     private static final int POINTS_LOSS_PER_ASTEROID_MISSED = 1;
     private static final int POINTS_GAINED_PER_ASTEROID_HIT = 50;
 
-    private final YassBaseFragment mParent;
+    private final GrimbBaseFragment mParent;
 
     private final TextView mText;
     // private final GoogleApiClient mApiClient; // TODO : gpgs aborted, code obsolete, work on it in the future
@@ -39,7 +34,7 @@ public class ScoreGameObject extends GameObject {
     private int mConsecutiveMisses;
     private int mConsecutiveHits;
 
-    public ScoreGameObject(YassBaseFragment parent, View view, int viewResId) {
+    public ScoreGameObject(GrimbBaseFragment parent, View view, int viewResId) {
         mText = (TextView) view.findViewById(viewResId);
         mParent = parent;
         // mApiClient = mParent.getYassActivity().getGameHelper().getApiClient(); TODO : gpgs aborted, code obsolete, work on it in the future

@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
+import com.indiewalkabout.grimb.GrimbActivity;
 import com.indiewalkabout.grimb.R;
-import com.indiewalkabout.grimb.YassActivity;
 
 import static android.view.View.*;
 
@@ -20,12 +20,12 @@ public class BaseCustomDialog implements OnTouchListener, Animation.AnimationLis
 
     private boolean mIsShowing;
 
-    protected final YassActivity mParent;
+    protected final GrimbActivity mParent;
     private ViewGroup mRootLayout;
     private View mRootView;
     private boolean mIsHiding;
 
-    public BaseCustomDialog(YassActivity activity) {
+    public BaseCustomDialog(GrimbActivity activity) {
         mParent = activity;
     }
 

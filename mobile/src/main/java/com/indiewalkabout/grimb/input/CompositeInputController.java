@@ -2,7 +2,7 @@ package com.indiewalkabout.grimb.input;
 
 import android.view.View;
 
-import com.indiewalkabout.grimb.YassActivity;
+import com.indiewalkabout.grimb.GrimbActivity;
 
 /**
  * Created by Raul Portales on 18/03/15.
@@ -12,7 +12,7 @@ public class CompositeInputController extends InputController {
     private VirtualJoystickInputController mVJoystickInputController;
 
 
-    public CompositeInputController(View view, YassActivity activity) {
+    public CompositeInputController(View view, GrimbActivity activity) {
         mGamepadInputController = new GamepadInputController(activity);
         mVJoystickInputController = new VirtualJoystickInputController(view);
     }

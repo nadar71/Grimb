@@ -13,7 +13,7 @@ public class QuitDialog extends BaseCustomDialog implements View.OnClickListener
     private QuitDialogListener mListener;
     private int mSelectedId;
 
-    public QuitDialog(YassActivity activity) {
+    public QuitDialog(GrimbActivity activity) {
         super(activity);
         setContentView(R.layout.dialog_quit);
         findViewById(R.id.btn_exit).setOnClickListener(this);

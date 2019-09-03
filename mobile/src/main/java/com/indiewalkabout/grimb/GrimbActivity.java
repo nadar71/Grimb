@@ -19,8 +19,8 @@ import com.indiewalkabout.grimb.engine.BaseCustomDialog;
 import com.indiewalkabout.grimb.sound.SoundManager;
 
 
-// public class YassActivity extends BaseGameActivity { TODO : gpgs aborted, code obsolete, work on it in the future
-public class YassActivity extends Activity {
+// public class GrimbActivity extends BaseGameActivity { TODO : gpgs aborted, code obsolete, work on it in the future
+public class GrimbActivity extends Activity {
 
     private static final String TAG_FRAGMENT = "content";
 
@@ -38,7 +38,7 @@ public class YassActivity extends Activity {
     @Override
     public void onSignInFailed() {
         // Notify the current fragment
-        YassBaseFragment f = (YassBaseFragment) getFragmentManager().findFragmentById(R.id.container);
+        GrimbBaseFragment f = (GrimbBaseFragment) getFragmentManager().findFragmentById(R.id.container);
         if (f != null) {
             f.onSignInFailed();
         }
@@ -47,7 +47,7 @@ public class YassActivity extends Activity {
     @Override
     public void onSignInSucceeded() {
         // Notify the current fragment
-        YassBaseFragment f = (YassBaseFragment) getFragmentManager().findFragmentById(R.id.container);
+        GrimbBaseFragment f = (GrimbBaseFragment) getFragmentManager().findFragmentById(R.id.container);
         if (f != null) {
             f.onSignInSucceeded();
         }
@@ -95,7 +95,7 @@ public class YassActivity extends Activity {
         navigateToFragment(new GameFragment());
     }
 
-    protected void navigateToFragment(YassBaseFragment dst) {
+    protected void navigateToFragment(GrimbBaseFragment dst) {
         getFragmentManager()
                 .beginTransaction()
 //                .setCustomAnimations(R.animator.fragment_return_enter,
@@ -175,7 +175,7 @@ public class YassActivity extends Activity {
             mCurrentDialog.dismiss();
             return;
         }
-        final YassBaseFragment fragment = (YassBaseFragment) getFragmentManager().findFragmentByTag(TAG_FRAGMENT);
+        final GrimbBaseFragment fragment = (GrimbBaseFragment) getFragmentManager().findFragmentByTag(TAG_FRAGMENT);
         if (fragment == null || !fragment.onBackPressed()) {
             super.onBackPressed();
         }

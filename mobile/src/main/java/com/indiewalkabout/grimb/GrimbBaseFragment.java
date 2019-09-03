@@ -11,7 +11,7 @@ import com.indiewalkabout.grimb.engine.BaseCustomDialog;
 /**
  * Created by Raul Portales on 06/03/15.
  */
-public class YassBaseFragment extends Fragment {
+public class GrimbBaseFragment extends Fragment {
 
     BaseCustomDialog mCurrentDialog;
 
@@ -47,8 +47,8 @@ public class YassBaseFragment extends Fragment {
         getYassActivity().showDialog(newDialog, dismissOtherDialog);
     }
 
-    public YassActivity getYassActivity() {
-        return (YassActivity) getActivity();
+    public GrimbActivity getYassActivity() {
+        return (GrimbActivity) getActivity();
     }
 
     public void onSignInFailed() {

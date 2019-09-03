@@ -8,7 +8,7 @@ import com.indiewalkabout.grimb.tv.MainMenuTvFragment;
 /**
  * Created by Raul Portales on 07/05/15.
  */
-public class YassTvActivity extends YassActivity {
+public class GrimbTvActivity extends GrimbActivity {
 
     public void startGame() {
         // Navigate the the game fragment, which makes the start automatically

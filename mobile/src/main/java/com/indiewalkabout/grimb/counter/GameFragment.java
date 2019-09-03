@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 import com.indiewalkabout.grimb.GameOverDialog;
 import com.indiewalkabout.grimb.PauseDialog;
-import com.indiewalkabout.grimb.YassBaseFragment;
+import com.indiewalkabout.grimb.GrimbBaseFragment;
 import com.indiewalkabout.grimb.engine.FPSCounter;
 import com.indiewalkabout.grimb.engine.GameEngine;
 import com.indiewalkabout.grimb.R;
@@ -24,7 +24,7 @@ import com.indiewalkabout.grimb.movement.ParallaxBackground;
  * A placeholder fragment containing a simple view.
  */
 @SuppressLint("NewApi")
-public class GameFragment extends YassBaseFragment implements View.OnClickListener, InputManager.InputDeviceListener, PauseDialog.PauseDialogListener, GameOverDialog.GameOverDialogListener {
+public class GameFragment extends GrimbBaseFragment implements View.OnClickListener, InputManager.InputDeviceListener, PauseDialog.PauseDialogListener, GameOverDialog.GameOverDialogListener {
 
     private GameEngine mGameEngine;
 

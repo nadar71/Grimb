@@ -6,16 +6,16 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 
 import com.indiewalkabout.grimb.GamepadControllerListener;
-import com.indiewalkabout.grimb.YassActivity;
+import com.indiewalkabout.grimb.GrimbActivity;
 
 /**
  * Created by Raul Portales on 10/03/15.
  */
 public class GamepadInputController extends InputController implements GamepadControllerListener {
 
-    private final YassActivity mActivity;
+    private final GrimbActivity mActivity;
 
-    public GamepadInputController(YassActivity activity) {
+    public GamepadInputController(GrimbActivity activity) {
         mActivity = activity;
     }
 

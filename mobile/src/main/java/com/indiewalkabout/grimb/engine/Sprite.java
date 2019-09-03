@@ -9,7 +9,7 @@ import android.graphics.Paint;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 
-import com.indiewalkabout.grimb.YassActivity;
+import com.indiewalkabout.grimb.GrimbActivity;
 
 /**
  * Created by Raul Portales on 23/03/15.
@@ -56,7 +56,7 @@ public abstract class Sprite extends ScreenGameObject {
                 || mY < -mHeight) {
             return;
         }
-        if (YassActivity.VISUAL_COLLISION_DEBUG) {
+        if (GrimbActivity.VISUAL_COLLISION_DEBUG) {
             mPaint.setColor(Color.YELLOW);
             if (mBodyType == BodyType.Circular) {
                 canvas.drawCircle((int) (mX + mWidth / 2), (int) (mY + mHeight / 2), (int) mRadius, mPaint);

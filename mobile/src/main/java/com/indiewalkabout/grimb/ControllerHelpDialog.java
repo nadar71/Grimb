@@ -9,7 +9,7 @@ import com.indiewalkabout.grimb.engine.BaseCustomDialog;
  * Created by Raul Portales on 12/05/15.
  */
 public class ControllerHelpDialog extends BaseCustomDialog implements View.OnClickListener {
-    public ControllerHelpDialog(YassActivity a) {
+    public ControllerHelpDialog(GrimbActivity a) {
         super(a);
         setContentView(R.layout.dialog_controller_help);
         findViewById(R.id.controller_help_image).setOnClickListener(this);

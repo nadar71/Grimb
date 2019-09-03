@@ -7,7 +7,7 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.view.Surface;
 
-import com.indiewalkabout.grimb.YassActivity;
+import com.indiewalkabout.grimb.GrimbActivity;
 
 /**
  * Created by Raul Portales on 10/03/15.
@@ -47,9 +47,9 @@ public class SensorsInputController extends InputController {
         }
     };
 
-    public SensorsInputController(YassActivity yassActivity) {
-        mActivity = yassActivity;
-        mRotation = yassActivity.getWindowManager().getDefaultDisplay().getRotation();
+    public SensorsInputController(GrimbActivity grimbActivity) {
+        mActivity = grimbActivity;
+        mRotation = grimbActivity.getWindowManager().getDefaultDisplay().getRotation();
     }
 
     private void registerListeners() {
