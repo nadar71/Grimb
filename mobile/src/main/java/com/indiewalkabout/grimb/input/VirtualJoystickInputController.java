@@ -6,7 +6,7 @@ import android.view.View;
 import com.indiewalkabout.grimb.R;
 
 /**
- * Created by Raul Portales on 10/03/15.
+ *
  */
 public class VirtualJoystickInputController extends InputController {
 

@@ -7,7 +7,7 @@ import com.indiewalkabout.grimb.engine.Sprite;
 import java.util.ArrayList;
 
 /**
- * Created by Raul Portales on 02/04/15.
+ *
  */
 public class Particle extends Sprite {
 

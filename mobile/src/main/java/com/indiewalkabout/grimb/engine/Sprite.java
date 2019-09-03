@@ -12,7 +12,7 @@ import android.graphics.drawable.Drawable;
 import com.indiewalkabout.grimb.GrimbActivity;
 
 /**
- * Created by Raul Portales on 23/03/15.
+ *
  */
 public abstract class Sprite extends ScreenGameObject {
 

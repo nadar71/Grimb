@@ -4,7 +4,7 @@ import com.indiewalkabout.grimb.R;
 import com.indiewalkabout.grimb.counter.MainMenuFragment;
 
 /**
- * Created by Raul Portales on 08/05/15.
+ *
  */
 public class MainMenuTvFragment extends MainMenuFragment {
     @Override

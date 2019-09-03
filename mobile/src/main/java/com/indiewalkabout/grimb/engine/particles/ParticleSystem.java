@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * Created by Raul Portales on 02/04/15.
+ *
  */
 public class ParticleSystem extends ScreenGameObject {
 

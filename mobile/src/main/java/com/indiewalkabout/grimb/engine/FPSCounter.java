@@ -5,7 +5,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 
 /**
- * Created by Raul Portales on 26/03/15.
+ *
  */
 public class FPSCounter extends GameObject {
     private final float mTextWidth;

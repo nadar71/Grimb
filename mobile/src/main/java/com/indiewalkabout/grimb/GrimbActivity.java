@@ -58,7 +58,7 @@ public class GrimbActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_yass);
+        setContentView(R.layout.activity_grimb);
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
                     .add(R.id.container,createMenuFragment(), TAG_FRAGMENT)

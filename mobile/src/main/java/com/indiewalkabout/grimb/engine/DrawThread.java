@@ -1,7 +1,7 @@
 package com.indiewalkabout.grimb.engine;
 
 /**
- * Created by Raul Portales on 03/03/15.
+ *
  */
 public class DrawThread extends Thread {
 

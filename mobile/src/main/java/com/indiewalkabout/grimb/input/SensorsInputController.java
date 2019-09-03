@@ -10,7 +10,7 @@ import android.view.Surface;
 import com.indiewalkabout.grimb.GrimbActivity;
 
 /**
- * Created by Raul Portales on 10/03/15.
+ *
  */
 public class SensorsInputController extends InputController {
 

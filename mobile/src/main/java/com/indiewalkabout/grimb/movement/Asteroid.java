@@ -9,7 +9,7 @@ import com.indiewalkabout.grimb.engine.particles.ScaleModifier;
 import com.indiewalkabout.grimb.sound.GameEvent;
 
 /**
- * Created by Raul Portales on 23/03/15.
+ *
  */
 public class Asteroid extends Sprite {
 

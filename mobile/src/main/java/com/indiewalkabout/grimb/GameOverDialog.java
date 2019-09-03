@@ -6,7 +6,7 @@ import com.indiewalkabout.grimb.counter.GameFragment;
 import com.indiewalkabout.grimb.engine.BaseCustomDialog;
 
 /**
- * Created by Raul Portales on 16/04/15.
+ *
  */
 public class GameOverDialog extends BaseCustomDialog implements View.OnClickListener {
 

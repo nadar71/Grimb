@@ -9,7 +9,7 @@ import android.view.ViewTreeObserver;
 import com.indiewalkabout.grimb.engine.BaseCustomDialog;
 
 /**
- * Created by Raul Portales on 06/03/15.
+ *
  */
 public class GrimbBaseFragment extends Fragment {
 

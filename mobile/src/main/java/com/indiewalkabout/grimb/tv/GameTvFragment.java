@@ -9,7 +9,7 @@ import com.indiewalkabout.grimb.R;
 import com.indiewalkabout.grimb.counter.GameFragment;
 
 /**
- * Created by Raul Portales on 07/05/15.
+ *
  */
 public class GameTvFragment extends GameFragment {
     @Override

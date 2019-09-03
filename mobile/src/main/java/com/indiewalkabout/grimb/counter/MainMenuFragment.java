@@ -30,7 +30,7 @@ import com.google.example.games.basegameutils.GameHelper;
 */
 
 /**
- * Created by Raul Portales on 03/03/15.
+ *
  */
 public class MainMenuFragment extends GrimbBaseFragment implements View.OnClickListener, QuitDialog.QuitDialogListener {
 

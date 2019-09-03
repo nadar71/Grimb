@@ -6,7 +6,7 @@ import com.indiewalkabout.grimb.tv.GameTvFragment;
 import com.indiewalkabout.grimb.tv.MainMenuTvFragment;
 
 /**
- * Created by Raul Portales on 07/05/15.
+ *
  */
 public class GrimbTvActivity extends GrimbActivity {
 

@@ -3,7 +3,7 @@ package com.indiewalkabout.grimb.engine;
 import android.graphics.Rect;
 
 /**
- * Created by Raul Portales on 01/04/15.
+ *
  */
 public abstract class ScreenGameObject extends GameObject {
 

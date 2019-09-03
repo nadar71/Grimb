@@ -1,7 +1,7 @@
 package com.indiewalkabout.grimb.engine;
 
 /**
- * Created by Raul Portales on 02/03/15.
+ *
  */
 public class UpdateThread extends Thread {
 

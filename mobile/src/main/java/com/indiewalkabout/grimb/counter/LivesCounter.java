@@ -10,7 +10,7 @@ import com.indiewalkabout.grimb.engine.GameObject;
 import com.indiewalkabout.grimb.sound.GameEvent;
 
 /**
- * Created by Raul Portales on 03/03/15.
+ *
  */
 public class LivesCounter extends GameObject {
 

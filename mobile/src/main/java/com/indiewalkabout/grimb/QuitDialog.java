@@ -6,7 +6,7 @@ import android.view.View;
 import com.indiewalkabout.grimb.engine.BaseCustomDialog;
 
 /**
- * Created by Raul Portales on 16/04/15.
+ *
  */
 public class QuitDialog extends BaseCustomDialog implements View.OnClickListener {
 

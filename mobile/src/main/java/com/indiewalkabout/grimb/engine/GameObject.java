@@ -5,7 +5,7 @@ import android.graphics.Canvas;
 import com.indiewalkabout.grimb.sound.GameEvent;
 
 /**
- * Created by Raul Portales on 03/03/15.
+ *
  */
 public abstract class GameObject {
 

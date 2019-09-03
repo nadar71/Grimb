@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Raul Portales on 31/03/15.
+ *
  */
 public class QuadTree {
 

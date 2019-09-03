@@ -3,7 +3,7 @@ package com.indiewalkabout.grimb.engine.particles;
 import java.util.Random;
 
 /**
- * Created by Raul Portales on 03/04/15.
+ *
  */
 public class RotationSpeedInitializer implements ParticleInitializer {
 

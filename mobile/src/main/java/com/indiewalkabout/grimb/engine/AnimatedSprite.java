@@ -5,7 +5,7 @@ import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.BitmapDrawable;
 
 /**
- * Created by Raul Portales on 24/04/15.
+ *
  */
 public abstract class AnimatedSprite extends Sprite {
 

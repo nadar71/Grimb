@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Raul Portales on 10/03/15.
+ *
  */
 public class Player extends AnimatedSprite {
 

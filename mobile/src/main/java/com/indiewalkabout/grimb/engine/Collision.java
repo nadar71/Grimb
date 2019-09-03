@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Raul Portales on 03/04/15.
+ *
  */
 public class Collision {
 

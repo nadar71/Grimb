@@ -8,7 +8,7 @@ import android.view.View;
 import java.util.List;
 
 /**
- * Created by Raul Portales on 23/03/15.
+ *
  */
 public class StandardGameView extends View implements GameView {
 

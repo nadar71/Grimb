@@ -16,7 +16,7 @@ import com.google.android.gms.games.Games;
  */
 
 /**
- * Created by Raul Portales on 03/03/15.
+ *
  */
 public class ScoreGameObject extends GameObject {
 

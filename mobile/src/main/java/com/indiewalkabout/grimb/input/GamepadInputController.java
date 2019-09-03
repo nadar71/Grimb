@@ -9,7 +9,7 @@ import com.indiewalkabout.grimb.GamepadControllerListener;
 import com.indiewalkabout.grimb.GrimbActivity;
 
 /**
- * Created by Raul Portales on 10/03/15.
+ *
  */
 public class GamepadInputController extends InputController implements GamepadControllerListener {
 

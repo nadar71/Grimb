@@ -7,7 +7,7 @@ import com.indiewalkabout.grimb.engine.BaseCustomDialog;
 import com.indiewalkabout.grimb.sound.SoundManager;
 
 /**
- * Created by Raul Portales on 16/04/15.
+ *
  */
 public class PauseDialog extends BaseCustomDialog implements View.OnClickListener {
 

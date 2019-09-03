@@ -6,7 +6,7 @@ import android.view.View;
 import com.indiewalkabout.grimb.engine.BaseCustomDialog;
 
 /**
- * Created by Raul Portales on 12/05/15.
+ *
  */
 public class ControllerHelpDialog extends BaseCustomDialog implements View.OnClickListener {
     public ControllerHelpDialog(GrimbActivity a) {

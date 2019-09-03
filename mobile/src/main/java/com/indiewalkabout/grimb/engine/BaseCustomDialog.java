@@ -14,7 +14,7 @@ import com.indiewalkabout.grimb.R;
 import static android.view.View.*;
 
 /**
- * Created by Raul Portales on 15/04/15.
+ *
  */
 public class BaseCustomDialog implements OnTouchListener, Animation.AnimationListener {
 

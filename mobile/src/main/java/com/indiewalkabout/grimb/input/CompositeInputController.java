@@ -5,7 +5,7 @@ import android.view.View;
 import com.indiewalkabout.grimb.GrimbActivity;
 
 /**
- * Created by Raul Portales on 18/03/15.
+ *
  */
 public class CompositeInputController extends InputController {
     private GamepadInputController mGamepadInputController;

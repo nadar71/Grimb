@@ -1,7 +1,7 @@
 package com.indiewalkabout.grimb.input;
 
 /**
- * Created by Raul Portales on 10/03/15.
+ *
  */
 public class InputController {
 

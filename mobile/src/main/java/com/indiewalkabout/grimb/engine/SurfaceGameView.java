@@ -9,7 +9,7 @@ import android.view.SurfaceView;
 import java.util.List;
 
 /**
- * Created by Raul Portales on 23/03/15.
+ *
  */
 public class SurfaceGameView extends SurfaceView implements SurfaceHolder.Callback, GameView {
 

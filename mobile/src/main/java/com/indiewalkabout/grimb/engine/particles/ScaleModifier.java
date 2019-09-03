@@ -1,7 +1,7 @@
 package com.indiewalkabout.grimb.engine.particles;
 
 /**
- * Created by Raul Portales on 06/04/15.
+ *
  */
 public class ScaleModifier implements ParticleModifier {
 

@@ -8,7 +8,7 @@ import com.indiewalkabout.grimb.engine.Sprite;
 import com.indiewalkabout.grimb.sound.GameEvent;
 
 /**
- * Created by Raul Portales on 12/03/15.
+ *
  */
 public class Bullet extends Sprite {
 

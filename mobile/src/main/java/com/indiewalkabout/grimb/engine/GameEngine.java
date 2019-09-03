@@ -15,7 +15,7 @@ import java.util.Map;
 import java.util.Random;
 
 /**
- * Created by Raul Portales on 02/03/15.
+ *
  */
 public class GameEngine {
 

@@ -12,7 +12,7 @@ import com.indiewalkabout.grimb.engine.GameEngine;
 import com.indiewalkabout.grimb.engine.GameObject;
 
 /**
- * Created by Raul Portales on 23/03/15.
+ *
  */
 public class ParallaxBackground extends GameObject {
 
