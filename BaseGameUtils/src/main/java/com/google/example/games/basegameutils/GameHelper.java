@@ -299,6 +299,8 @@ public class GameHelper implements GoogleApiClient.ConnectionCallbacks,
           builder.addApi(Drive.API);
         }
 
+        // builder.addOnConnectionFailedListener(this);
+
         mGoogleApiClientBuilder = builder;
         return builder;
     }
@@ -1068,4 +1070,7 @@ public class GameHelper implements GoogleApiClient.ConnectionCallbacks,
         debugLog("Forcing mConnectOnStart=" + connectOnStart);
         mConnectOnStart = connectOnStart;
     }
+
+
+
 }
