@@ -4,8 +4,16 @@ import android.graphics.Canvas;
 import android.view.View;
 import android.widget.TextView;
 
+import com.indiewalkabout.grimb.R;
+import com.indiewalkabout.grimb.YassBaseFragment;
+import com.indiewalkabout.grimb.engine.GameEngine;
+import com.indiewalkabout.grimb.engine.GameObject;
+import com.indiewalkabout.grimb.sound.GameEvent;
+
+/* TODO : gpgs aborted, code obsolete, work on it in the future
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.games.Games;
+ */
 import com.indiewalkabout.grimb.R;
 import com.indiewalkabout.grimb.YassBaseFragment;
 import com.indiewalkabout.grimb.engine.GameEngine;
@@ -23,7 +31,7 @@ public class ScoreGameObject extends GameObject {
     private final YassBaseFragment mParent;
 
     private final TextView mText;
-    private final GoogleApiClient mApiClient;
+    // private final GoogleApiClient mApiClient; // TODO : gpgs aborted, code obsolete, work on it in the future
     private int mPoints;
     private boolean mPointsHaveChanged;
 
@@ -34,17 +42,18 @@ public class ScoreGameObject extends GameObject {
     public ScoreGameObject(YassBaseFragment parent, View view, int viewResId) {
         mText = (TextView) view.findViewById(viewResId);
         mParent = parent;
-        mApiClient = mParent.getYassActivity().getGameHelper().getApiClient();
+        // mApiClient = mParent.getYassActivity().getGameHelper().getApiClient(); TODO : gpgs aborted, code obsolete, work on it in the future
     }
 
     @Override
     public void onUpdate(long elapsedMillis, GameEngine gameEngine) {
         mTimeWithoutDie += elapsedMillis;
         if (mTimeWithoutDie > 60000) {
-            unlockSafe(R.string.achievement_survivor);
+            // unlockSafe(R.string.achievement_survivor); TODO : gpgs aborted, code obsolete, work on it in the future
         }
     }
 
+    /* TODO : gpgs aborted, code obsolete, work on it in the future
     private void unlockSafe(int resId) {
         if (mApiClient.isConnecting() || mApiClient.isConnected()) {
             try {
@@ -54,6 +63,7 @@ public class ScoreGameObject extends GameObject {
             }
         }
     }
+     */
 
     @Override
     public void startGame(GameEngine gameEngine) {
@@ -71,13 +81,13 @@ public class ScoreGameObject extends GameObject {
             mPointsHaveChanged = true;
             mConsecutiveMisses = 0;
             mConsecutiveHits++;
-            checkAsteroidHitRelatedAchievements();
+            // checkAsteroidHitRelatedAchievements(); TODO : gpgs aborted, code obsolete, work on it in the future
         }
         else if (gameEvent == GameEvent.BulletMissed) {
             mConsecutiveMisses++;
             mConsecutiveHits = 0;
             if (mConsecutiveMisses >= 20) {
-                unlockSafe(R.string.achievement_target_lost);
+                // unlockSafe(R.string.achievement_target_lost); TODO : gpgs aborted, code obsolete, work on it in the future
             }
         }
         else if (gameEvent == GameEvent.SpaceshipHit) {
@@ -91,6 +101,7 @@ public class ScoreGameObject extends GameObject {
         }
         else if (gameEvent == GameEvent.GameFinished) {
             // Submit the score
+            /* TODO : gpgs aborted, code obsolete, work on it in the future
             if (mApiClient.isConnecting() || mApiClient.isConnected()) {
                 try {
                     Games.Leaderboards.submitScore(mApiClient, getLeaderboardId(), mPoints);
@@ -101,9 +112,12 @@ public class ScoreGameObject extends GameObject {
                     mApiClient.disconnect();
                 }
             }
+
+             */
         }
     }
 
+    /* TODO : gpgs aborted, code obsolete, work on it in the future
     private void checkAsteroidHitRelatedAchievements() {
         if (mPoints > 100000) {
            // Unlock achievement
@@ -121,6 +135,8 @@ public class ScoreGameObject extends GameObject {
             }
         }
     }
+
+     */
 
     private String getString(int resId) {
         return mParent.getString(resId);

@@ -1,5 +1,6 @@
 package com.indiewalkabout.grimb;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.graphics.Typeface;
 import android.media.AudioManager;
@@ -11,14 +12,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.google.example.games.basegameutils.BaseGameActivity;
+// import com.google.example.games.basegameutils.BaseGameActivity;  // TODO : gpgs aborted, code obsolete, work on it in the future
 import com.indiewalkabout.grimb.counter.GameFragment;
 import com.indiewalkabout.grimb.counter.MainMenuFragment;
 import com.indiewalkabout.grimb.engine.BaseCustomDialog;
 import com.indiewalkabout.grimb.sound.SoundManager;
 
 
-public class YassActivity extends BaseGameActivity {
+// public class YassActivity extends BaseGameActivity { TODO : gpgs aborted, code obsolete, work on it in the future
+public class YassActivity extends Activity {
 
     private static final String TAG_FRAGMENT = "content";
 
@@ -31,6 +33,7 @@ public class YassActivity extends BaseGameActivity {
     private boolean mShowingDialog;
     private BaseCustomDialog mCurrentDialog;
 
+    /* TODO : gpgs aborted, code obsolete, work on it in the future
 
     @Override
     public void onSignInFailed() {
@@ -49,6 +52,8 @@ public class YassActivity extends BaseGameActivity {
             f.onSignInSucceeded();
         }
     }
+
+    */
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +67,7 @@ public class YassActivity extends BaseGameActivity {
         setVolumeControlStream(AudioManager.STREAM_MUSIC);
         mSoundManager = new SoundManager(getApplicationContext());
         mCustomTypeface = Typeface.createFromAsset(getAssets(), "ttf/Adore64.ttf");
-        getGameHelper().setMaxAutoSignInAttempts(1);
+        // getGameHelper().setMaxAutoSignInAttempts(1); // TODO : gpgs aborted, code obsolete, work on it in the future
     }
 
     protected Fragment createMenuFragment() {

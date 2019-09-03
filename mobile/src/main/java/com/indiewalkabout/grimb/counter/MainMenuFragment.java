@@ -14,10 +14,22 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+import com.indiewalkabout.grimb.ControllerHelpDialog;
+import com.indiewalkabout.grimb.QuitDialog;
+import com.indiewalkabout.grimb.R;
+import com.indiewalkabout.grimb.YassActivity;
+import com.indiewalkabout.grimb.YassBaseFragment;
+import com.indiewalkabout.grimb.sound.SoundManager;
+
+import java.util.Random;
+
+/* TODO : gpgs aborted, code obsolete, work on it in the future
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;
 import com.google.android.gms.games.Games;
 import com.google.example.games.basegameutils.GameHelper;
+*/
+
 import com.indiewalkabout.grimb.ControllerHelpDialog;
 import com.indiewalkabout.grimb.QuitDialog;
 import com.indiewalkabout.grimb.R;
@@ -83,13 +95,18 @@ public class MainMenuFragment extends YassBaseFragment implements View.OnClickLi
 //            }
 //        });
 //        animation.start();
+
+        /* TODO : gpgs aborted, code obsolete, work on it in the future
         updatePlayButtons();
+        */
+
 //        ImageView iv = (ImageView) getView().findViewById(R.id.ship_animated);
 //        ((AnimationDrawable)iv.getDrawable()).start();
 
 //        animateShip();
     }
 
+    /* TODO : gpgs aborted, code obsolete, work on it in the future
     @Override
     public void onSignInFailed() {
         updatePlayButtons();
@@ -120,6 +137,7 @@ public class MainMenuFragment extends YassBaseFragment implements View.OnClickLi
             getView().findViewById(R.id.btn_sign_in).setVisibility(View.VISIBLE);
         }
     }
+    */
 
     private void animateShip() {
         try {
@@ -237,6 +255,7 @@ public class MainMenuFragment extends YassBaseFragment implements View.OnClickLi
             soundManager.toggleSoundStatus();
             updateSoundAndMusicButtons();
         }
+        /* TODO : gpgs aborted, code obsolete, work on it in the future
         else if (v.getId() == R.id.btn_achievements) {
             try {
                 GoogleApiClient apiClient = getYassActivity().getGameHelper().getApiClient();
@@ -264,6 +283,7 @@ public class MainMenuFragment extends YassBaseFragment implements View.OnClickLi
         else if (v.getId() == R.id.btn_sign_in) {
             getYassActivity().getGameHelper().beginUserInitiatedSignIn();
         }
+        */
     }
 
     @Override
@@ -278,6 +298,8 @@ public class MainMenuFragment extends YassBaseFragment implements View.OnClickLi
                     .commit();
         }
     }
+
+
 
     private void displayGamepadHelp() {
         showDialog(new ControllerHelpDialog(getYassActivity()));
