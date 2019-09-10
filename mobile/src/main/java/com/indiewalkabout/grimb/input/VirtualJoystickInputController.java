@@ -39,17 +39,17 @@ public class VirtualJoystickInputController extends InputController {
                 // Get the proportion to the max
                 mHorizontalFactor = (event.getX(0) - mStartingPositionX) / mMaxDistance;
                 if (mHorizontalFactor > 1) {
-                    mHorizontalFactor = 1;
+                    mHorizontalFactor = 2;
                 }
                 else if (mHorizontalFactor < -1) {
-                    mHorizontalFactor = -1;
+                    mHorizontalFactor = -2;
                 }
                 mVerticalFactor = (event.getY(0) - mStartingPositionY) / mMaxDistance;
                 if (mVerticalFactor > 1) {
-                    mVerticalFactor = 1;
+                    mVerticalFactor = 2;
                 }
                 else if (mVerticalFactor < -1) {
-                    mVerticalFactor = -1;
+                    mVerticalFactor = -2;
                 }
             }
             return true;
