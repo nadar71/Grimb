@@ -24,7 +24,9 @@ import com.indiewalkabout.grimb.movement.ParallaxBackground;
  * A placeholder fragment containing a simple view.
  */
 @SuppressLint("NewApi")
-public class GameFragment extends GrimbBaseFragment implements View.OnClickListener, InputManager.InputDeviceListener, PauseDialog.PauseDialogListener, GameOverDialog.GameOverDialogListener {
+public class GameFragment extends GrimbBaseFragment implements View.OnClickListener,
+        InputManager.InputDeviceListener, PauseDialog.PauseDialogListener,
+        GameOverDialog.GameOverDialogListener {
 
     private GameEngine mGameEngine;
 
